@@ -56,6 +56,7 @@ const promptUser = () => {
 };
 
 const generateReadMe = (answers) => 
+
 `# ${answers.title}
 
 ## Description
@@ -80,21 +81,21 @@ ${answers.usage}
 ${answers.installation}
 
 ## License
-${answers.license}
+NOTICE: This application is covered by ${answers.license}.
 
 ## Want to Contribute?
 ${answers.contributing}
 
 ## Questions
-If you have any questions, I can be reached at [Email]mailto:${answers.email}
+If you have any questions, I can be reached at [${answers.email}](${answers.email})
 
-Or find me on [GitHub]${answers.github}`;
+Or find me on [GitHub](${answers.github})`;
 
 const init = () => {
     promptUser()
-    .then((answers) => fs.writeFileAsync(`${answers.name}-README.md`, generateReadMe(answers)))
-    .then(() => console.log(`Successfully wrote to ${answers.name}-README.md`))
-    .catch((err) => console.error(err));
+    .then((answers) => writeFileAsync(`${answers.title}.md`, generateReadMe(answers)))
+    .then(() => console.log('Successfully wrote to README.md'))
+    .catch((err) => console.error(err))
 };
 
 init();
