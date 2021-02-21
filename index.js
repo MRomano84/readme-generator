@@ -4,7 +4,7 @@ const util = require('util');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const proptUser = () => {
+const promptUser = () => {
     return inquirer.prompt([
         {
             type: 'input',
@@ -61,6 +61,8 @@ const generateReadMe = (answers) =>
 ## Description
 ${answers.description}
 
+----------------------------------
+
 ## Table of Contents
 
 * [Usage](#usage)
@@ -68,6 +70,8 @@ ${answers.description}
 * [License](#license)
 * [How to Contribute](#contributing)
 * [Questions](#questions)
+
+----------------------------------
 
 ## Usage
 ${answers.usage}
@@ -85,3 +89,12 @@ ${answers.contributing}
 If you have any questions, I can be reached at [Email]mailto:${answers.email}
 
 Or find me on [GitHub]${answers.github}`;
+
+const init = () => {
+    promptUser()
+    .then((answers) => fs.writeFileAsync(`${answers.name}-README.md`, generateReadMe(answers)))
+    .then(() => console.log(`Successfully wrote to ${answers.name}-README.md`))
+    .catch((err) => console.error(err));
+};
+
+init();
