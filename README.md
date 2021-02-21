@@ -31,6 +31,9 @@ If you would like to contribute to this project you can clone the repo, make any
 
 ## Screenshots
 
+![CLI](./screenshots/cliSS.png)
+
+![Dummy](./screenshots/dummySS.png)
 
 ## Questions
 If you have any comments or questions I can be reached at [EMAIL](mathiasrok@gmail.com).
