@@ -54,3 +54,34 @@ const proptUser = () => {
         },
     ]);
 };
+
+const generateReadMe = (answers) => 
+`# ${answers.title}
+
+## Description
+${answers.description}
+
+## Table of Contents
+
+* [Usage](#usage)
+* [Installation](#installation)
+* [License](#license)
+* [How to Contribute](#contributing)
+* [Questions](#questions)
+
+## Usage
+${answers.usage}
+
+## Installation
+${answers.installation}
+
+## License
+${answers.license}
+
+## Want to Contribute?
+${answers.contributing}
+
+## Questions
+If you have any questions, I can be reached at [Email]mailto:${answers.email}
+
+Or find me on [GitHub]${answers.github}`;
