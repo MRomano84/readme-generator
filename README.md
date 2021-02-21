@@ -21,7 +21,8 @@ Follow the prompts given by inquirer and the file will be generated and filled i
 the user's input.
 
 ## Installation
-Clone the repo and ensure Node.js is installed and run 'npm install inquirer' in the command line.
+Clone the repo and ensure Node.js is installed. In the command line run 
+> `npm install inquirer`
 
 ## License
 This project is not covered by a license.
