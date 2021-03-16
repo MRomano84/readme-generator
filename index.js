@@ -18,8 +18,8 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'usage',
-            message: 'How will your project be used?'
+            name: 'tech',
+            message: 'What technologies were used?'
         },
         {
             type: 'input',
@@ -74,8 +74,8 @@ ${answers.description}
 
 ----------------------------------
 
-## Usage
-${answers.usage}
+## Technologies Used
+${answers.tech}
 
 ## Installation
 ${answers.installation}
