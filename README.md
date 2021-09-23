@@ -32,9 +32,11 @@ If you would like to contribute to this project you can clone the repo, make any
 
 ## Screenshots
 
+Screenshot of the CLI of this application
 ![CLI](https://github.com/MRomano84/readme-generator/blob/main/screenshots/cliSS.PNG)
 
-![Dummy](./screenshots/dummySS.png)
+Screenshot of a README.md file created by this application
+![Dummy](https://github.com/MRomano84/readme-generator/blob/main/screenshots/dummySS.PNG)
 
 ## Questions
 If you have any comments or questions I can be reached at [EMAIL](mathiasrok@gmail.com).
