@@ -32,7 +32,7 @@ If you would like to contribute to this project you can clone the repo, make any
 
 ## Screenshots
 
-[CLI](https://github.com/MRomano84/readme-generator/blob/main/screenshots/cliSS.PNG)
+![CLI](https://github.com/MRomano84/readme-generator/blob/main/screenshots/cliSS.PNG)
 
 ![Dummy](./screenshots/dummySS.png)
 
